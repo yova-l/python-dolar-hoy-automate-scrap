@@ -15,6 +15,8 @@ VERSION = os.environ["VERSION"]
 APP_ID = os.environ["APP_ID"]
 APP_SECRET = os.environ["APP_SECRET"]
 
+# MUST SEND A MESSAGE TO THE TEST NUMBER BEFORE
+
 def get_text_message_input(recipient, text):
     return json.dumps(
         {
