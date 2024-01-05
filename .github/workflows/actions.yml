@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # At every 5 minute
+    - cron: '*/5 * * * *' # At every 5 minutes
 
 env:
   #SOME_SECRET: ${{ secrets.SOME_SECRET }}
