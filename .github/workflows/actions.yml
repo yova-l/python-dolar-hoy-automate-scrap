@@ -30,6 +30,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          sudo apt-get install python3-lxml
           
       - name: execute py script # run main.py
         run: python main.py
