@@ -9,7 +9,8 @@ if __name__ == "__main__":
         dol_val_sell = money_exchange.get_value(dollar, constants.SELL_ARR_POS)
         send_dolar_notif(dollar, constants.DH_SELL, dol_val_sell)
         
-        if dollar == constants.DH_TARJETA: continue
+        if dollar == constants.DH_TARJETA: 
+            continue
 
         dol_val_buy = money_exchange.get_value(dollar, constants.BUY_ARR_POS)
         send_dolar_notif(dollar, constants.DH_BUY, dol_val_buy)

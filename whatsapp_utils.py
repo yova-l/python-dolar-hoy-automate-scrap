@@ -6,7 +6,6 @@ import json
 # Load environment variables
 # --------------------------------------------------------------
 
-#SOME_SECRET = os.environ["SOME_SECRET"]
 ACCESS_TOKEN = os.environ["ACCESS_TOKEN"]
 RECIPIENT_WAID = os.environ["RECIPIENT_WAID"]
 PHONE_NUMBER_ID = os.environ["PHONE_NUMBER_ID"]
@@ -14,8 +13,7 @@ VERSION = os.environ["VERSION"]
 APP_ID = os.environ["APP_ID"]
 APP_SECRET = os.environ["APP_SECRET"]
 
-# MUST SEND A MESSAGE TO THE TEST NUMBER BEFORE
-
+# SOMETIMES MUST SEND A MESSAGE TO THE TEST NUMBER BEFORE
 def get_text_message_input(recipient, text):
     return json.dumps(
         {

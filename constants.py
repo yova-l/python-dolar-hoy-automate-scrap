@@ -1,4 +1,3 @@
-
 DH_BLUE = "Dólar blue"
 DH_OFICIAL = "Dólar Oficial"
 DH_BOLSA = "Dólar Bolsa"
