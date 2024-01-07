@@ -2,8 +2,8 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Everyday at 8:00 am
-
+    #- cron: '0 14 * * *' # Everyday at 11:00 am ARG
+     - cron: '*/5 * * * *'
 env:
   #SOME_SECRET: ${{ secrets.SOME_SECRET }}
   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
