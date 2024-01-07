@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from .classes import MoneyExchange
+from classes import MoneyExchange
 import constants
 
 # def scrap_blue(soup, operation):

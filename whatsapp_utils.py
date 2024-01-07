@@ -1,7 +1,6 @@
 import os
 import requests
 import json
-from .constants import DH_TARJETA
 
 # --------------------------------------------------------------
 # Load environment variables
