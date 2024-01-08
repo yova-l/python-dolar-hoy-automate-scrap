@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 14 * * *' # Everyday at 11:00 am ARG
+    - cron: '0 14,16,18 * * *' # Everyday at 11, 13, 15 ARG
 
 env:
   #SOME_SECRET: ${{ secrets.SOME_SECRET }}
@@ -12,6 +12,7 @@ env:
   VERSION: ${{ secrets.VERSION }}
   APP_ID: ${{ secrets.APP_ID }}
   APP_SECRET: ${{ secrets.APP_SECRET }}
+  VIR: ${{ secrets.VIR }}
 
 jobs:
   build:

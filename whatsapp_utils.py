@@ -13,6 +13,8 @@ VERSION = os.environ["VERSION"]
 APP_ID = os.environ["APP_ID"]
 APP_SECRET = os.environ["APP_SECRET"]
 
+VIR = os.environ["VIR"]
+
 # SOMETIMES MUST SEND A MESSAGE TO THE TEST NUMBER BEFORE
 def get_text_message_input(recipient, text):
     return json.dumps(
@@ -48,5 +50,12 @@ def send_dolar_notif(dol_type, operation, value):
     message = f'El {dol_type} está {value} para la {operation}'
     data = get_text_message_input(
         recipient=RECIPIENT_WAID, text=message
+    )
+    send_message(data)
+
+def send_dolar_notif_vir(dol_type, operation, value):
+    message = f'El {dol_type} está {value} para la {operation}'
+    data = get_text_message_input(
+        recipient=VIR, text=message
     )
     send_message(data)
