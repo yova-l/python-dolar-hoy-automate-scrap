@@ -46,15 +46,27 @@ def send_message(data):
         print(response.text)
         return response
 
-def send_dolar_notif(dol_type, operation, value):
-    message = f'El {dol_type} está {value} para la {operation}'
+# def send_dolar_notif(dol_type, operation, value):
+#     message = f'El {dol_type} está {value} para la {operation}'
+#     data = get_text_message_input(
+#         recipient=RECIPIENT_WAID, text=message
+#     )
+#     send_message(data)
+
+# def send_dolar_notif_vir(dol_type, operation, value):
+#     message = f'El {dol_type} está {value} para la {operation}'
+#     data = get_text_message_input(
+#         recipient=VIR, text=message
+#     )
+#     send_message(data)
+
+def send_full_msg_yova(message):
     data = get_text_message_input(
         recipient=RECIPIENT_WAID, text=message
     )
     send_message(data)
 
-def send_dolar_notif_vir(dol_type, operation, value):
-    message = f'El {dol_type} está {value} para la {operation}'
+def send_full_msg_vir(message):
     data = get_text_message_input(
         recipient=VIR, text=message
     )
