@@ -22,9 +22,4 @@ if __name__ == "__main__":
     
     send_full_msg_yova(final_res)
 
-        
-    
-        
-
-
-        
+#Revive the script
